@@ -1,6 +1,6 @@
 channels:
   - conda-forge
 dependencies:
-  - chromium
-  - chrome-driver
+  - google-chrome
+  - chromedriver
   - selenium
