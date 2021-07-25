@@ -24,7 +24,7 @@ option.add_argument('--no-sandbox')
 option.add_argument('--disable-dev-shm-usage')
 # driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), options=option)
 
-driver=webdriver.Chrome(executable_path="/home/appuser/.conda/bin/chrome-driver",options=option)
+driver=webdriver.Chrome(executable_path="/home/appuser/.conda/bin/chromedriver",options=option)
 headers1 = {
     'Accept-Encoding': 'gzip, deflate, sdch',
     'Accept-Language': 'en-US,en;q=0.8',
