@@ -3,4 +3,5 @@ channels:
 dependencies:
   - pip:
      - chromedriver-py
+     - selenium
   
