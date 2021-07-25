@@ -1,5 +1,6 @@
 channels:
   - conda-forge
 dependencies:
-  - chromedriver-py
-  - selenium
+  - pip:
+     - chromedriver-py
+  
