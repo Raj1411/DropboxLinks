@@ -8,7 +8,7 @@ import base64
 import io, os
 import requests as rq
 # from chromedriver_py import binary_path
-# from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 
@@ -24,7 +24,7 @@ option.add_argument('--no-sandbox')
 option.add_argument('--disable-dev-shm-usage')
 # driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), options=option)
 
-driver=webdriver.Chrome(executable_path="./chromedriver",options=option)
+driver=webdriver.Chrome(executable_path=binary_path,options=option)
 headers1 = {
     'Accept-Encoding': 'gzip, deflate, sdch',
     'Accept-Language': 'en-US,en;q=0.8',
