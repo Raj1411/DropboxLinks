@@ -7,8 +7,8 @@ import streamlit.components as stc
 import base64
 import io, os
 import requests as rq
-# from chromedriver_py import binary_path
-from webdriver_manager.chrome import ChromeDriverManager
+from chromedriver_py import binary_path
+# from webdriver_manager.chrome import ChromeDriverManager
 
 
 
