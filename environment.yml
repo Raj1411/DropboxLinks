@@ -1,7 +1,6 @@
 channels:
   - conda-forge
 dependencies:
-  - pip:
-     - chromedriver-py==92.0.4515.43
-     - selenium
-  
+  - firefox
+  - geckodriver
+  - selenium
