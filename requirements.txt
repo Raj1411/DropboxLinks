@@ -32,4 +32,3 @@ tornado==6.1
 tzlocal==1.5.1
 validators==0.18.2
 streamlit==0.84.1
-openpyxl==3.0.6
