@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 import streamlit.components as stc
 import base64
 import io, os
-from selenium.webdriver.firefox.options import Options
+# from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -27,10 +27,10 @@ st.title('Extract Dropbox Links')
 # option.add_argument('--disable-dev-shm-usage')
 # driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), options=option)
 
-firefoxOptions = Options()
-firefoxOptions.add_argument("--headless")
+fOptions = Options()
+fOptions.add_argument("--headless")
 
-driver=webdriver.Firefox(executable_path="/home/appuser/.conda/bin/geckodriver",options=firefoxOptions)
+driver=webdriver.Chrome(executable_path="/home/appuser/.conda/bin/chromedriver",options=fOptions)
 headers1 = {
     'Accept-Encoding': 'gzip, deflate, sdch',
     'Accept-Language': 'en-US,en;q=0.8',
