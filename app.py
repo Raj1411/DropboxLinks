@@ -30,10 +30,10 @@ st.title('Extract Dropbox Links')
 
 firefoxOptions = Options()
 firefoxOptions.add_argument("--headless")
-
+s=Service("/home/appuser/.conda/bin/geckodriver")
 driver = webdriver.Firefox(
     options=firefoxOptions,
-    executable_path="/home/appuser/.conda/bin/geckodriver",
+    s,
 )
 headers1 = {
     'Accept-Encoding': 'gzip, deflate, sdch',
