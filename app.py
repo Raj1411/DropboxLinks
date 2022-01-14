@@ -33,8 +33,7 @@ firefoxOptions.add_argument("--headless")
 s=Service("/home/appuser/.conda/bin/geckodriver")
 driver = webdriver.Firefox(
     options=firefoxOptions,
-    s,
-)
+    service=s)
 headers1 = {
     'Accept-Encoding': 'gzip, deflate, sdch',
     'Accept-Language': 'en-US,en;q=0.8',
