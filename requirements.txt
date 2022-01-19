@@ -40,3 +40,4 @@ xlwings==0.23.3
 seleniumbase>=1.63
 webdriver-manager
 webdrivermanager
+geckodriver-autoinstaller==0.1.0
