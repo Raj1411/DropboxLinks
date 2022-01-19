@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.firefox.service import Service
 # from webdriver_manager.firefox import GeckoDriverManager
 # from webdrivermanager import GeckoDriverManager
-import geckodriver_autoinstaller
+# import geckodriver_autoinstaller
 
 # from chromedriver_py import binary_path
 # from webdriver_manager.chrome import ChromeDriverManager
@@ -35,11 +35,11 @@ firefoxOptions = Options()
 firefoxOptions.add_argument("--headless")
 # s=Service("/home/appuser/.conda/bin/geckodriver")
 
-s=Service(geckodriver_autoinstaller.install())
-driver = webdriver.Firefox(service=s,options=firefoxOptions)
+# s=Service(geckodriver_autoinstaller.install())
+# driver = webdriver.Firefox(service=s,options=firefoxOptions)
 
 
-# driver = webdriver.Firefox(executable_path="/home/appuser/.conda/bin/geckodriver",options=firefoxOptions)
+driver = webdriver.Firefox(executable_path="/home/appuser/.conda/bin/geckodriver",options=firefoxOptions)
 headers1 = {
     'Accept-Encoding': 'gzip, deflate, sdch',
     'Accept-Language': 'en-US,en;q=0.8',
