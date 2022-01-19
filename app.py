@@ -10,7 +10,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.firefox.service import Service
-# from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
 from webdrivermanager import GeckoDriverManager
 
 # from chromedriver_py import binary_path
