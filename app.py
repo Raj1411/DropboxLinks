@@ -10,6 +10,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.common.by import By
 # from webdriver_manager.firefox import GeckoDriverManager
 # from webdrivermanager import GeckoDriverManager
 # import geckodriver_autoinstaller
@@ -92,7 +93,8 @@ while True:
     last_height = new_height
 
 
-a=driver.find_elements_by_xpath("//a[@href]")
+# a=driver.find_elements_by_xpath("//a[@href]")
+a=driver.find_elements(By.XPATH, '//a[@href]')
 
 links=[]
 for i in a:
